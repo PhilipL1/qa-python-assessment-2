@@ -1,3 +1,4 @@
+import random
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
 # INSTRUCTIONS
@@ -31,7 +32,11 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    outstr = ''
+    for char in string:
+        outstr = outstr + char + char + char
+    return outstr
+print(one("The"))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,8 +57,18 @@ def one(string):
 
 
 def two(number):
-    return False
+    x = True
+    for i in range(2,number): 
+        if (number%i) ==0:
+            x = False
+        break
+    return x         
+print(two(3))
+print(two(8))
+print(two(2))
+    # Write a function which returns the boolean True if the input is only divisible by one and itself.
 
+    # The function should return the boolean False if not.
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 3>
@@ -72,8 +87,14 @@ def two(number):
 
 
 def three(a):
-    return 1
+    n1 = int( "%s" % a )
+    n2 = int( "%s%s" % (a,a) )
+    n3 = int( "%s%s%s" % (a,a,a) )
+    n4 = int( "%s%s%s%s" % (a,a,a,a) )
+    return (n1+n2+n3+n4)
 
+print(three(9))
+print(three(5))
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 4>
@@ -104,7 +125,19 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    len1 = len(string1)
+    len2 = len(string2)
+    if len1 != len2:
+        print("Inputs must be the same length")
+    else:
+        result = ""
+        for i in range(len1):
+            result += string1[i]
+            result += string2[i]
+    return(result)
+
+print(four("String","Fridge")) 
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -124,8 +157,9 @@ def four(string1, string2):
 
 
 def five():
-    return []
-
+    list = (random.sample([i for i in range(100,201) if i%2==0], 5))
+    return list
+print(five())
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 6>
@@ -146,7 +180,15 @@ def five():
 
 
 def six(string):
-    return False
+    end='py'
+    result = string.endswith(end)
+    return result
+
+
+print(six("ilovepy"))
+print(six("welovepy"))
+print(six("welovepyforreal"))
+print(six("pyiscool"))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
