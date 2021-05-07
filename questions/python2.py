@@ -182,7 +182,9 @@ print(five())
 def six(string):
     end='py'
     result = string.endswith(end)
-    return result
+    if result:
+        return result 
+    else: return result
 
 
 print(six("ilovepy"))
@@ -215,7 +217,8 @@ print(six("pyiscool"))
 
 
 def seven(a, b, c):
-    return False
+   mylist= list.sort(a,b,c)
+   return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
