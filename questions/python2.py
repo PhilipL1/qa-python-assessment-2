@@ -1,5 +1,5 @@
 import random
-import numpy as np
+
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
 # INSTRUCTIONS
@@ -218,12 +218,15 @@ print(six("pyiscool"))
 
 
 def seven(a, b, c):
-   mylist= list.sort(a,b,c)
-   numbers = np.linspace(mylist)
-   answer = False 
-   if numbers % 2 == 0:
-       return True
-print(seven(2, 4, 6)
+    return False 
+#     mylist= list.sort(a,b,c)
+#     numbers = np.linspace(mylist)
+#     answer = False 
+#     if numbers % 2 == 0:
+#         return True
+#     else: return False
+
+# print(seven(2, 4, 6))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
