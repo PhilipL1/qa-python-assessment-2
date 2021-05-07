@@ -1,4 +1,5 @@
 import random
+import numpy as np
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
 # INSTRUCTIONS
@@ -218,7 +219,11 @@ print(six("pyiscool"))
 
 def seven(a, b, c):
    mylist= list.sort(a,b,c)
-   return False
+   numbers = np.linspace(mylist)
+   answer = False 
+   if numbers % 2 == 0:
+       return True
+print(seven(2, 4, 6)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -238,8 +243,8 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 
-def eight(string,  a):
-    return ""
+def eight(string, a):
+    pass
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
