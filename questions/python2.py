@@ -180,12 +180,12 @@ print(five())
 
 
 def six(string):
-    end='py'
-    result = string.endswith(end)
-    if result:
-        return result 
-    else: return result
-
+    string1=string.lower()
+    str1=string1[-1]
+    str2=string1[-2]
+    if str1 == 'y' and str2 == 'p':
+        return True
+    else : return False 
 
 print(six("ilovepy"))
 print(six("welovepy"))
